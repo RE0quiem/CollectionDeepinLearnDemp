@@ -69,7 +69,7 @@ public class Tester<C> {
     }
 
     public static <C> void run(C cntnr, List<Test<C>> tests, TestParam[] paramList) {
-        new Tester<C>(cntnr,tests,paramList);
+        new Tester<C>(cntnr,tests,paramList).timedTest();
     }
 
     private void displayHeader() {
